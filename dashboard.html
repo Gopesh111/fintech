@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Fintech</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <p>Paisa</p>
+        </div>
+        <div class="nav-items">
+            <a href="homepage.html"><button class="nav-item">Home</button></a>
+            <button class="nav-item">Dashboard</button>
+            <a href="calculator.html"><button class="nav-item">Features</button></a>
+            <a href="timeline.html"><button class="nav-item">About</button></a>
+            <button class="nav-item">Contact</button> 
+            <a href="profile.html"><button class="nav-item get-started">Your Account</button></a>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="greeting">
+            <h1>Welcome Back, Gopesh!</h1>
+            <p>Here's a quick overview of your financial status today.</p>
+        </section>
+
+        <section class="account-summary">
+            <div class="summary-card balance">
+                <h2>Total Balance</h2>
+                <p>$12,345.67</p>
+            </div>
+            <div class="summary-card income">
+                <h2>Monthly Income</h2>
+                <p>$3,000.00</p>
+            </div>
+            <div class="summary-card expenses">
+                <h2>Monthly Expenses</h2>
+                <p>$1,200.00</p>
+            </div>
+            <div class="summary-card investments">
+                <h2>Investments</h2>
+                <p>$5,000.00</p>
+            </div>
+        </section>
+
+        <section class="financial-overview">
+            <div class="chart-container-1">
+                <h2>Spending Overview</h2>
+                <canvas id="spendingChart"></canvas>
+            </div>
+            <div class="chart-container-2">
+                <h2>Income vs Expenses</h2>
+                <canvas id="incomeExpensesChart"></canvas>
+            </div>
+        </section>
+
+        <section class="recent-transactions">
+            <h2>Recent Transactions</h2>
+            <ul class="transaction-list">
+                <li>
+                    <span class="transaction-date">Sep 8, 2024</span>
+                    <span class="transaction-detail">Grocery Store</span>
+                    <span class="transaction-amount">- $50.00</span>
+                </li>
+                <li>
+                    <span class="transaction-date">Sep 7, 2024</span>
+                    <span class="transaction-detail">Salary</span>
+                    <span class="transaction-amount">+ $3,000.00</span>
+                </li>
+                <li>
+                    <span class="transaction-date">Sep 6, 2024</span>
+                    <span class="transaction-detail">Electricity Bill</span>
+                    <span class="transaction-amount">- $100.00</span>
+                </li>
+                <!-- More transactions -->
+            </ul>
+        </section>
+
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="actions-container">
+                <button class="action-btn">Transfer Money</button>
+                <button class="action-btn">Pay Bills</button>
+                <button class="action-btn">Invest</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Fintech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,700 @@
+/* Navigation bar container styling */
+body {
+    background-color: white;
+    padding: 0;
+}
+/* Reset some default styles */
+body, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Dark Blue Background */
+    padding: 10px 20px;
+    color: #fff; /* White Text */
+    position: relative; /* Ensure dropdowns position correctly */
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #39c33a; /* Bright Green */
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+    margin-right: 30px; /* Add space between buttons */
+}
+
+.nav-item:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.nav-items button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.nav-items button:hover {
+    color: #003366; /* Dark Blue Text on Hover */
+    background-color: #39c33a; /* Bright Green Background on Hover */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Move "Get Started" Button to the Right */
+/* Ensure "Get Started" Button has Permanent Green Background */
+.get-started {
+    background-color: #39c33a !important; /* Permanent Green Background */
+    color: #fff;
+    border-radius: 0px 25px 0px 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-left: auto; /* Push the button to the rightmost side */
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect for "Get Started" */
+.get-started:hover {
+    background-color: #2a8f2a !important; /* Slightly darker green on hover */
+    border-radius: 0px 25px 0px 25px;
+}
+
+.search img {
+    width: 32px;
+    height: 35px;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #81dcf5; /* Light Blue Background */
+    color: #fff;
+    border-radius: 0px 25px 0px 25px; /* Match dropdown radius */
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1000;
+    padding: 0; /* Remove default padding */
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.dropdown a:hover {
+    background-color: #39c33a; /* Bright Green Background on Hover */
+    border-radius: 0px 25px 0px 25px;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+}
+
+/* Styling for Dropdown Content */
+.nav-item .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item .dropdown-content a {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #81dcf5;
+    border-radius: 0px 25px 0px 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-item .dropdown-content a:hover {
+    background-color: #39c33a;
+    border-radius: 0px 25px 0 25px;
+}
+
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+}
+
+
+.line1 {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.line1 > * { /* '>' selects only the direct children of .line1 */
+    margin-left: 60px; /* Sets 5px space between each item */
+}
+
+.line1 > *:first-child { /* Selects the first child of .line1 */
+    margin-left: 120px; /* Sets 10px margin for the first item only */
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+}
+.imgr {
+    position: absolute; /* Positions the image absolutely relative to the nearest positioned ancestor */
+    right: 60%; /* Moves the image 40% from the left side of the page */
+    height: 20px; /* Allows you to manually adjust height while maintaining aspect ratio */
+    top:240px;
+    background-color: #c6307b;
+}
+.r 
+{
+    height: 400px;
+}
+.parl
+{
+    margin-left: 790px;
+    margin-top: 100px;
+}
+.b{
+ margin-left:790px;
+ margin-top: 10px;
+}
+.e {
+    background-color: #c6307b !important; /* "Get Started" button ka background color */
+    color: white!important; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px ; /* Extra padding for better appearance */
+    text-decoration: none; /* Text decoration ko hata diya */
+    font-size: 15px; /* Reasonable font size */
+    border-radius: 25px 0px 25px 0px;
+    font-weight: 700;
+    border-color: #c6307b;
+}
+.c{
+    background-color: white !important; /* "Get Started" button ka background color */
+    color: #c6307b !important; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px ; /* Extra padding for better appearance */
+    text-decoration: none; /* Text decoration ko hata diya */
+    font-size: 15px; /* Reasonable font size */
+    border-radius: 25px 0px 25px 0px;
+    font-weight: 700;
+    margin-left: 10px;
+    border-color: #c6307b;
+}
+.e :hover{
+    background-color:rgb(217, 125, 144);
+}
+/* New Navbar Styling */
+.navbar-bottom {
+    display: flex;
+    justify-content: center; /* Centering the images horizontally */
+    align-items: center; /* Centering the images vertically */
+    background-color: #F0F8F7; /* Background color for the right section */
+    border-radius: 0px;
+    padding: 5px 0; /* Adjust padding as needed */
+    margin-top: 50px; /* Space between the new navbar and the content above */
+}
+
+.navbar-bottom img {
+    max-width: 100px; /* Adjust width as needed */
+    max-height: 100px; /* Adjust height as needed */
+    margin: 0 40px; /* Space between images */
+    object-fit: contain; /* Ensures the images fit within the specified size while maintaining aspect ratio */
+    width: 80px; /* Set the desired width for all images */
+    height: 80px; /* Set the desired height for all images */
+}
+/* Video bar styling */
+.video-bar {
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Custom height for the video bar */
+    overflow: hidden; /* Hide any overflow */
+    background-color: black; /* Background color (optional) */
+}
+
+.video-bar video {
+    width: 100%; /* Full width of the video container */
+    height: 100%; /* Full height of the video container */
+    object-fit: cover; /* Ensure the video covers the container while maintaining aspect ratio */
+}
+
+/* Container styling for the curved section */
+.curved-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white; /* Background color for the left section */
+    padding: 50px 5%; /* Add equal padding on both sides */
+    margin-top: 10px; /* Space below the video section */
+    border-radius: 50px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 5%; /* Padding on the right side to balance the space */
+    z-index: 2; /* Make sure text content is on top */
+}
+
+.text-content h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #c6307b;
+    color: white;
+    border: none;
+    border-radius: 25px 0px 25px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.image-content {
+    flex: 1;
+    padding-left: 5%; /* Padding on the left side to balance the space */
+    z-index: 2; /* Make sure image content is on top */
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.curved-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    background-color: #F0F8F7; /* Background color for the right section */
+    z-index: 1; /* Place the curve behind the content */
+    border-top-left-radius: 100px; /* Border radius for the top-left corner */
+    border-bottom-left-radius: 100px; /* Border radius for the top-left corner */
+    
+    transform: translate(10%, 0);
+}
+.curved-container-reversed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white; /* Background color for the right section */
+    padding: 50px 5%; /* Add equal padding on both sides */
+    margin-top: 20px; /* Space below the video section */
+    border-radius: 50px;
+}
+
+.text-content-reversed {
+    flex: 1;
+    padding-left: 5%; /* Padding on the left side to balance the space */
+    z-index: 2; /* Make sure text content is on top */
+}
+
+.text-content-reversed h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+.text-content-reversed p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.cta-button-reversed {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #c6307b;
+    color: white;
+    border: none;
+    border-radius: 25px 0px 25px 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.image-content-reversed {
+    flex: 1;
+    padding-right: 5%; /* Padding on the right side to balance the space */
+    z-index: 2; /* Make sure image content is on top */
+}
+
+.image-content-reversed img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.curved-container-reversed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /* Align the curve to the left for reversed layout */
+    width: 55%;
+    height: 100%;
+    background-color: #F0F8F7; /* Background color for the left section */
+    z-index: 1; /* Place the curve behind the content */
+    border-top-right-radius: 100px; /* Border radius for the top-right corner */
+    border-bottom-right-radius: 100px; /* Border radius for the bottom-right corner */
+    
+    transform: translate(-10%, 0); /* Adjust the curve position */
+}
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%; /* Space from both left and right sides */
+    margin-top: 20px;
+}
+
+.box1 {
+    width: 30%; /* Each box takes up 30% of the container width */
+    padding: 20px;
+    background-color:rgb(215, 236, 193);
+    border-radius: 45px 0px 45px 0px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+.box1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box1 h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.box1 p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.box-button {
+    padding: 10px 20px;
+    background-color: #1678FB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.box2 {
+    width: 30%; /* Each box takes up 30% of the container width */
+    padding: 20px;
+    background-color: rgb(166, 214, 238);
+    border-radius: 45px 0px 45px 0px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+.box2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box2 h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.box2 p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.box3 {
+    width: 30%; /* Each box takes up 30% of the container width */
+    padding: 20px;
+    background-color: rgb(220, 193, 233);
+    border-radius: 45px 0px 45px 0px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the width and height */
+}
+
+.box3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.box3 h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.box3 p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.features-container {
+    margin-top: 10px;
+    text-align: center;
+    padding: 60px 5%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.features-container h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.feature-item img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%;
+    margin-top: 20px;
+}
+
+.testimonial-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.testimonial-box {
+    width: 30%; /* Decreased width for better fit */
+    height: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 10px;
+    min-height: 350px; /* Increased height for more space */
+}
+
+.testimonial-box img {
+    width: 100px; /* Increased width for larger visibility */
+    height: 100px; /* Increased height for larger visibility */
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-box h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.testimonial-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.testimonial-button {
+    padding: 10px 20px;
+    background-color: #1678FB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1 1 220px;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #f2f2f2;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d3d3d3;
+}
+
+.footer a {
+    color: #1678FB;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links ul,
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.social-icons li {
+    margin-bottom: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Makes icons white */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+.feature-item.security {
+    background-color: #E6F7FF; /* Pale Blue */
+}
+
+.feature-item.integration {
+    background-color: #E6F4EA; /* Soft Green */
+}
+
+.feature-item.support {
+    background-color: #F5F5F5; /* Light Gray */
+}
+
+.testimonial-box.testimonial1 {
+    background-color: #FBE8D3; /* Warm Beige */
+}
+
+.testimonial-box.testimonial2 {
+    background-color: #F3E5F5; /* Light Lavender */
+}
+
+.testimonial-box.testimonial3 {
+    background-color: #FFE5E5; /* Soft Peach */
+}
+
+
+

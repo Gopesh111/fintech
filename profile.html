@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Fintech</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <p>Paisa</p>
+        </div>
+        <div class="nav-items">
+            <button class="nav-item">Home</button>
+            <button class="nav-item">Features</button>
+            <button class="nav-item">About</button>
+            <button class="nav-item">Contact</button>
+            <a href="dashboard.html"><button class="nav-item get-started">Dashboard</button></a>
+        </div>
+    </header>
+    
+    <main class="profile-page">
+        <div class="profile-header">
+            <h1>User Profile</h1>
+            <button class="edit-profile-btn">Edit Profile</button>
+        </div>
+        
+        <div class="profile-content">
+            <div class="profile-photo">
+                <div class="profile-photo-container">
+                    <img src="dummy-woman-570x570.png" alt="Profile Photo" id="profilePhoto" class="profile-photo-img">
+                    <input type="file" id="profile-photo-upload" name="profile-photo" class="profile-photo-upload">
+                    <label for="profile-photo-upload" class="profile-photo-label">Change Photo</label>
+                </div>
+            </div>
+            
+            <form class="profile-form">
+                <section class="personal-info">
+                    <h2>Personal Information</h2>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" name="middle-name">
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </section>
+                
+                <section class="contact-info">
+                    <h2>Contact Information</h2>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                    
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                    
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+                    
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip" required>
+                </section>
+                
+                <section class="account-info">
+                    <h2>Account Information</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </section>
+                
+                <section class="financial-info">
+                    <h2>Financial Information</h2>
+                    <label for="bank-name">Bank Name:</label>
+                    <input type="text" id="bank-name" name="bank-name" required>
+                    
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                    
+                    <label for="ifsc-code">IFSC Code:</label>
+                    <input type="text" id="ifsc-code" name="ifsc-code" required>
+                </section>
+                
+                <section class="document-verification">
+                    <h2>Document Verification</h2>
+                    <label for="id-proof">ID Proof:</label>
+                    <input type="file" id="id-proof" name="id-proof" required>
+                    
+                    <label for="address-proof">Address Proof:</label>
+                    <input type="file" id="address-proof" name="address-proof" required>
+                    
+                    <label for="income-proof">Income Proof:</label>
+                    <input type="file" id="income-proof" name="income-proof" required>
+                </section>
+                
+                <section class="preferences">
+                    <h2>Preferences</h2>
+                    <label for="language">Preferred Language:</label>
+                    <select id="language" name="language" required>
+                        <option value="english">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="french">French</option>
+                    </select>
+                    
+                    <label for="notifications">Notifications:</label>
+                    <select id="notifications" name="notifications" required>
+                        <option value="all">All</option>
+                        <option value="important">Important</option>
+                        <option value="none">None</option>
+                    </select>
+                </section>
+                
+                <button type="submit" class="submit-btn">Save Changes</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Learn more about our company and mission.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@fintech.com</p>
+                <p>Phone: 1-800-123-4567</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="facebook-logo-3.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter.jpeg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="linkedin.jpeg" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fintech. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const profilePhoto = document.getElementById('profilePhoto');
+                    profilePhoto.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function init() {
+            document.getElementById('profile-photo-upload').addEventListener('change', handleFileSelect);
+            document.querySelector('.profile-photo-label').addEventListener('click', function() {
+                document.getElementById('profile-photo-upload').click();
+            });
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>

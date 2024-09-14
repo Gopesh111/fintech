@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header nav {
+    background-color: #003366;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.calculator-selection {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-color: #003366;
+    
+}
+
+.calculator-options button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-options button:hover {
+    background-color: #0055a5;
+}
+
+#calculator-container {
+    margin: 20px auto;
+    padding: 10px;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden initially */
+    background-color:#F0F8F7;
+    position: relative;
+    z-index: 1; /* Ensures it's above other content */
+}
+
+
+#calculator-container h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+#calculator-container form {
+    display: flex;
+    flex-direction: column;
+    border-color: #003366;
+}
+
+#calculator-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#calculator-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#calculator-container button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calculator-container button:hover {
+    background-color: #0055a5;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+@media (max-width: 768px) {
+    .calculator-selection,
+    #calculator-container {
+        width: 90%;
+    }
+
+    .calculator-options button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 14px;
+    }
+}

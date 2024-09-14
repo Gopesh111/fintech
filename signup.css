@@ -1,0 +1,153 @@
+/* General Styles */
+/* Solid Blue with Texture */
+/* Background Gradient */
+/* Blue and Light Gray Gradient */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #003366, #66ccff);
+    color: #333;
+}
+
+
+
+@keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Header (Unchanged Style) */
+.header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    margin: 0;
+}
+
+.header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .nav ul li {
+    margin-left: 20px;
+}
+
+.header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header .nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Container Styles */
+.signup-container {
+    width: 60%;
+    margin: 80px auto 60px auto; /* Adjust margins for header and footer */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0px 70px 0px 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form Styles */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 300px; /* Ensures the form groups have a minimum width */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px 25px 0 25px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0px 25px 0 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 280px;
+}
+
+button:hover {
+    background-color: #002244;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
