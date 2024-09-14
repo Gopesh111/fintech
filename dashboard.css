@@ -137,9 +137,9 @@ body {
 #spendingChart {
     margin-left: 0; /* Remove left margin to center the chart */
     max-width: 100%; /* Ensure the chart fits within the container */
-    height: 450px; /* Maintain the aspect ratio */
+    height: 350px; /* Maintain the aspect ratio */
     margin-bottom: 20px; /* Add some space from the bottom of the chart */
-    margin-top: 30px;
+    margin-top: 50px;
 }
 /* Recent transactions */
 .recent-transactions {
