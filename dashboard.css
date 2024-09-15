@@ -1,0 +1,205 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1e3a8a;
+    color: white;
+}
+.logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #1e40af;
+}
+
+.get-started {
+    background-color: #fbbf24;
+    color: #000;
+}
+
+.get-started:hover {
+    background-color: #f59e0b;
+}
+
+/* Main content */
+.dashboard {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.greeting h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.greeting p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Account summary */
+.account-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.summary-card {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.summary-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.summary-card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Financial overview */
+.financial-overview {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chart-container-1 {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height:450px;
+    width:50px;
+}
+.chart-container-2 {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px; /* Increase padding at the bottom for extra space */
+    display: flex;
+
+    align-items: center; /* Vertically center the chart */
+    justify-content: center; /* Horizontally center the chart */
+}
+
+#spendingChart {
+    margin-left: 0; /* Remove left margin to center the chart */
+    max-width: 100%; /* Ensure the chart fits within the container */
+    height: 350px; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* Add some space from the bottom of the chart */
+    margin-top: 50px;
+}
+/* Recent transactions */
+.recent-transactions {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-list li:last-child {
+    border-bottom: none;
+}
+
+/* Quick actions */
+.quick-actions {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.actions-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.action-btn {
+    padding: 15px 25px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #1e40af;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
